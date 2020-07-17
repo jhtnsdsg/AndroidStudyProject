@@ -1,2 +1,3 @@
+include ':activitylife'
 include ':app'
 rootProject.name = "MyProject"

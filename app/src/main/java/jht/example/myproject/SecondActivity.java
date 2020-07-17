@@ -18,8 +18,26 @@ public class SecondActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Activity跳转
-                Intent intent=new Intent(SecondActivity.this,MainActivity.class);
+                finish();
+//                Intent intent=new Intent(SecondActivity.this,MainActivity.class);
+//                startActivity(intent);
+            }
+        });
+
+        Button button_first=findViewById(R.id.but5);
+        button_first.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent("com.jht.activitytest.ACTION_START");
+                startActivity(intent);
+            }
+        });
+
+        Button button_thitd=findViewById(R.id.bt_to_third);
+        button_thitd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent("android.intent.action.VIEW");
                 startActivity(intent);
             }
         });

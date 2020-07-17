@@ -4,12 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    tools:context=".SecondActivity"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/but4"
         android:text="返回主界面"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:paddingTop="10dp"
+        android:id="@+id/but5"
+        android:text="转跳FirstActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="转跳ActivityThird"
+        android:id="@+id/bt_to_third"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
 

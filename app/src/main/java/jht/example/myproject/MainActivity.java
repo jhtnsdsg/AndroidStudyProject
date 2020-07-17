@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Activity跳转
                 Intent intent=new Intent(MainActivity.this,SecondActivity.class);
                 startActivity(intent);
             }
